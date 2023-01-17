@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div id="rows">  
+
+        <div class="quarter">
+            <label for="fall">FALL:</label><br>
+            <textarea id="fall" name="fall" rows="6"></textarea>
+            <br>
+         <div class="quarter">
+            <label for="spring">SPRING:</label><br>
+            <textarea id="spring" name="spring" rows="6"></textarea>
+            <br>
+            <div class="quarter">
+            <label for="spring">WINTER:</label><br>
+            <textarea id="winter" name="winter" rows="6"></textarea>
+            <br>
+
+            <div class="quarter">
+            <label for="summer">SUMMER:</label><br>
+            <textarea id="summer" name="summer" rows="5"></textarea>
+            <br>
+        
+        
+        <br>
+        </textarea><br><br>
+          <div id="save">
+            <button id="save" type="submit"> Save</button>
+            </div>
+    
+    </form>
+    
+    <?php
+    if (!empty($_POST)) {
+        print "<div id='saved'>
+    <h1>Plan successfully saved!</h1>
+    <h2> Last saved: . ($lastUpdate)</h2>
+        </div>";
+    }
+    
+    
+   
