@@ -98,7 +98,7 @@ define('DB_PASSWORD','N{Bca-Oqw21h');
         //4. Execute the query
         $statement->execute();
 
-        //5. Process the results (get OrderID)
+        //5. Process the results (get OrderID).
         $id = $this->_dbh->lastInsertId();
         return $id;
     }
